@@ -159,6 +159,7 @@ h1 {
   border-radius: 4px;
   padding: 8px 16px;
   outline-offset: 4px;
+  text-transform: uppercase;
 }
 
 .banner {
@@ -230,3 +231,31 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.key {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    background-color: #CCC;
+    color: #000;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 3px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+    .key:hover { background-color: #AAA; }
+
+.key-break { width: 100%; }
